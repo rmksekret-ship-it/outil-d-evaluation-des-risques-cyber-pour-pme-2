@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outil d&#x27;Évaluation des Risques Cyber pour PME | Pourquoi un Diagnostic Cyber est Crucial</title>
+    <meta name="description" content="Évaluez la vulnérabilité de votre PME face aux cyberattaques grâce à un questionnaire ciblé. Recevez un rapport personnalisé et des recommandations pour renforcer votre sécurité.">
+    <style>
+        :root {
+            --color-primary: #0A0A0A;
+            --color-secondary: #1A1A1A;
+            --color-accent: #FFD700;
+            --color-text: #E0E0E0;
+            --color-light-text: #B0B0B0;
+            --color-border: #333333;
+            --font-display: 'Arial Black', Gadget, sans-serif;
+            --font-body: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            font-family: var(--font-body);
+            color: var(--color-text);
+            background-color: var(--color-primary);
+            margin: 0;
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background-color: var(--color-secondary);
+            padding: 2rem 0;
+            text-align: center;
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        h1 {
+            font-family: var(--font-display);
+            color: var(--color-accent);
+            font-size: 2.8rem;
+            margin: 0;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--color-light-text);
+            margin-top: 0.5rem;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        section {
+            padding: 4rem 0;
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        section:last-of-type {
+            border-bottom: none;
+        }
+
+        h2 {
+            font-family: var(--font-display);
+            color: var(--color-accent);
+            font-size: 2.2rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            position: relative;
+            text-transform: uppercase;
+        }
+
+        h2::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background-color: var(--color-accent);
+            margin: 1rem auto 0;
+        }
+
+        .intro-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 2.5rem;
+            text-align: center;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            color: var(--color-light-text);
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .card {
+            background-color: var(--color-secondary);
+            padding: 2rem;
+            border-radius: 8px;
+            border: 1px solid var(--color-border);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+        }
+
+        .card h3 {
+            color: var(--color-accent);
+            font-size: 1.5rem;
+            margin-top: 0;
+            border-bottom: 1px solid var(--color-border);
+            padding-bottom: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .card p {
+            color: var(--color-light-text);
+            font-size: 0.95rem;
+        }
+
+        .tool-section {
+            background-color: var(--color-secondary);
+            padding: 4rem 2rem;
+            border-radius: 10px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+            border: 1px solid var(--color-border);
+        }
+
+        .tool-section h2 {
+            margin-bottom: 2rem;
+            color: var(--color-accent);
+        }
+
+        #tool-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.2rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.7rem;
+            font-weight: bold;
+            color: var(--color-text);
+            font-size: 1.1rem;
+        }
+
+        .form-group input[type="radio"] {
+            margin-right: 0.5rem;
+            accent-color: var(--color-accent);
+        }
+
+        .form-group div {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 0.5rem;
+        }
+
+        .form-group div label {
+            font-weight: normal;
+            color: var(--color-light-text);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+        }
+
+        #tool-submit {
+            background-color: var(--color-accent);
+            color: var(--color-primary);
+            border: none;
+            padding: 1rem 2rem;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            margin-top: 2rem;
+            align-self: center;
+        }
+
+        #tool-submit:hover {
+            background-color: #E6B800;
+            transform: translateY(-2px);
+        }
+
+        #tool-result {
+            margin-top: 3rem;
+            padding: 2rem;
+            background-color: var(--color-primary);
+            border-radius: 8px;
+            border: 1px solid var(--color-border);
+            min-height: 150px;
+            display: none;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        #tool-result h3 {
+            color: var(--color-accent);
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .result-section {
+            background-color: var(--color-secondary);
+            padding: 1.5rem;
+            border-radius: 6px;
+            border: 1px solid var(--color-border);
+        }
+
+        .result-section h4 {
+            color: var(--color-text);
+            margin-top: 0;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .result-section p {
+            color: var(--color-light-text);
+            margin-bottom: 0.5rem;
+        }
+
+        .action-button {
+            display: block;
+            width: fit-content;
+            margin: 2rem auto 0;
+            background-color: transparent;
+            color: var(--color-accent);
+            border: 2px solid var(--color-accent);
+            padding: 0.8rem 1.8rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            cursor: pointer;
+        }
+
+        .action-button:hover {
+            background-color: var(--color-accent);
+            color: var(--color-primary);
+        }
+
+        .seo-section {
+            padding: 4rem 2rem;
+            background-color: var(--color-primary);
+            color: var(--color-light-text);
+            font-size: 0.9rem;
+            line-height: 1.7;
+            text-align: justify;
+        }
+
+        .seo-section h3 {
+            color: var(--color-accent);
+            font-size: 1.6rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .seo-section a {
+            color: var(--color-accent);
+            text-decoration: none;
+        }
+
+        .seo-section a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: var(--color-secondary);
+            text-align: center;
+            padding: 2rem 0;
+            color: var(--color-light-text);
+            font-size: 0.85rem;
+            border-top: 1px solid var(--color-border);
+        }
+    </style>
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://outil-d-evaluation-des-risques-cyber-pour-pme-2.onrender.com">
+    <meta property="og:title" content="Outil d&#x27;Évaluation des Risques Cyber pour PME">
+    <meta property="og:description" content="Évaluez la vulnérabilité de votre PME face aux cyberattaques grâce à un questionnaire ciblé. Recevez un rapport personnalisé et des recommandations pour renforcer votre sécurité.">
+    <meta property="og:url" content="https://outil-d-evaluation-des-risques-cyber-pour-pme-2.onrender.com">
+    <meta property="og:type" content="website">
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Outil d'Évaluation des Risques Cyber pour PME", "description": "Évaluez la vulnérabilité de votre PME face aux cyberattaques grâce à un questionnaire ciblé. Recevez un rapport personnalisé et des recommandations pour renforcer votre sécurité.", "url": "https://outil-d-evaluation-des-risques-cyber-pour-pme-2.onrender.com", "applicationCategory": "UtilityApplication", "operatingSystem": "Web Browser"}</script>
+</head>
+<body data-site-slug="outil-d-evaluation-des-risques-cyber-pour-pme-2" data-runtime-mode="analysis_tool">
+    <header>
+        <div class="container">
+            <h1>Outil d'Évaluation des Risques Cyber pour PME</h1>
+            <p class="subtitle">Sécurisez votre avenir numérique : une analyse rapide, des recommandations concrètes.</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="container">
+            <h2>Pourquoi un Diagnostic Cyber est Crucial</h2>
+            <p class="intro-text">Les cybermenaces évoluent constamment, et les PME sont des cibles privilégiées. Sans une évaluation régulière, vous exposez votre entreprise à des risques de pertes financières, de réputation et de données. Notre outil vous offre une vision claire de votre posture de sécurité actuelle.</p>
+
+            <div class="card-grid">
+                <div class="card">
+                    <h3>Identification des Vulnérabilités</h3>
+                    <p>Découvrez les failles potentielles de votre système avant qu'elles ne soient exploitées par des acteurs malveillants.</p>
+                </div>
+                <div class="card">
+                    <h3>Conformité Réglementaire</h3>
+                    <p>Assurez-vous de respecter les normes en vigueur (RGPD, etc.) et évitez les sanctions coûteuses.</p>
+                </div>
+                <div class="card">
+                    <h3>Protection de votre Réputation</h3>
+                    <p>Une seule cyberattaque peut nuire durablement à la confiance de vos clients et partenaires. Agissez préventivement.</p>
+                </div>
+                <div class="card">
+                    <h3>Optimisation des Investissements</h3>
+                    <p>Dirigez vos efforts et budgets de sécurité là où ils sont le plus nécessaires, pour une protection maximale.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="tool-section">
+                <h2>Votre Diagnostic Cyber Personnalisé</h2>
+                <p class="intro-text" style="color: var(--color-text);">Répondez à quelques questions simples pour obtenir une première évaluation de vos risques. Ce questionnaire est conçu pour être rapide et pertinent pour la plupart des PME françaises.</p>
+
+                <form id="tool-form">
+                    <div class="form-group">
+                        <label>1. Votre entreprise stocke-t-elle des données sensibles (clients, financières, santé) ?</label>
+                        <div>
+                            <label><input type="radio" name="q1" value="oui" required> Oui</label>
+                            <label><input type="radio" name="q1" value="non"> Non</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>2. Vos employés ont-ils une formation régulière sur la cybersécurité ?</label>
+                        <div>
+                            <label><input type="radio" name="q2" value="oui" required> Oui, régulièrement</label>
+                            <label><input type="radio" name="q2" value="parfois"> Parfois ou à l'arrivée</label>
+                            <label><input type="radio" name="q2" value="non"> Non ou très rarement</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>3. Utilisez-vous un pare-feu et un antivirus à jour sur tous vos équipements ?</label>
+                        <div>
+                            <label><input type="radio" name="q3" value="oui" required> Oui, systématiquement</label>
+                            <label><input type="radio" name="q3" value="partiellement"> Partiellement</label>
+                            <label><input type="radio" name="q3" value="non"> Non ou je ne sais pas</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>4. Effectuez-vous des sauvegardes régulières de vos données essentielles ?</label>
+                        <div>
+                            <label><input type="radio" name="q4" value="oui_hors_site" required> Oui, et hors-site</label>
+                            <label><input type="radio" name="q4" value="oui_sur_site"> Oui, mais uniquement sur site</label>
+                            <label><input type="radio" name="q4" value="non"> Non ou très rarement</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>5. Avez-vous une politique de mots de passe robustes (longueur, caractères spéciaux) ?</label>
+                        <div>
+                            <label><input type="radio" name="q5" value="oui" required> Oui, appliquée strictement</label>
+                            <label><input type="radio" name="q5" value="partiellement"> En partie ou peu contrôlée</label>
+                            <label><input type="radio" name="q5" value="non"> Non</label>
+                        </div>
+                    </div>
+
+                    <button type="submit" id="tool-submit">Obtenir Mon Diagnostic</button>
+                </form>
+
+                <div id="tool-result" style="display: none;">
+                    <h3 id="result-headline">Votre Résultat d'Évaluation des Risques Cyber</h3>
+                    <div class="result-section">
+                        <h4>Niveau de Vulnérabilité Estimé : <span id="vulnerability-level" style="color: var(--color-accent);"></span></h4>
+                        <p id="risk-summary"></p>
+                    </div>
+                    <div class="result-section">
+                        <h4>Recommandations Clés :</h4>
+                        <p id="recommendations"></p>
+                    </div>
+                    <a href="#" class="action-button" data-affiliate-slot="cyber-audit-pro-fr">Besoin d'un Audit Plus Approfondi ?</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <h2>Notre Engagement : Votre Sécurité</h2>
+            <p class="intro-text">Nous sommes dévoués à fournir aux PME les outils nécessaires pour naviguer en toute sécurité dans le paysage numérique. Notre expertise se manifeste à travers des solutions claires et actionnables, conçues pour les réalités du marché français.</p>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>Approche Pédagogique</h3>
+                    <p>Nous expliquons les concepts complexes de manière simple, pour que chacun puisse comprendre les enjeux.</p>
+                </div>
+                <div class="card">
+                    <h3>Solutions Concrètes</h3>
+                    <p>Fini le jargon technique ! Nous vous offrons des actions précises à mettre en œuvre immédiatement.</p>
+                </div>
+                <div class="card">
+                    <h3>Veille Technologique</h3>
+                    <p>Notre veille constante assure que nos recommandations sont toujours à la pointe des dernières menaces et défenses.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="seo-section">
+        <div class="container">
+            <h3>Cybersécurité pour PME en France : Protégez Votre Entreprise</h3>
+            <p>Dans le contexte actuel, la <a href="#">cybersécurité PME</a> est devenue une priorité absolue pour les entrepreneurs français. Face à l'augmentation des <a href="#">cyberattaques</a>, un <a href="#">diagnostic cybersécurité</a> régulier est indispensable pour toute petite et moyenne entreprise souhaitant sécuriser ses actifs numériques. Notre <a href="#">outil d'évaluation des risques cyber</a> offre une analyse rapide de votre posture de sécurité, couvrant des aspects critiques comme la protection des <a href="#">données sensibles</a>, la formation de vos employés, la mise en place d'<a href="#">antivirus pour entreprise</a> et de <a href="#">pare-feu professionnel</a>, ainsi que l'importance des <a href="#">sauvegardes de données</a>. Les PME en France sont souvent ciblées en raison de ressources limitées, mais les conséquences d'une brèche peuvent être dévastatrices. Notre plateforme vous aide à identifier vos <a href="#">vulnérabilités de sécurité</a> et à mettre en œuvre des <a href="#">stratégies de défense cyber</a> efficaces. Que vous cherchiez à améliorer votre <a href="#">conformité RGPD</a> ou à protéger votre réputation, un audit préliminaire est le premier pas. Découvrez comment renforcer votre <a href="#">sécurité informatique</a> et protéger votre entreprise des menaces numériques avec des <a href="#">recommandations cyber personnalisées</a> adaptées au marché français.</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Sécurité Cyber PME. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('tool-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const q1 = document.querySelector('input[name="q1"]:checked')?.value;
+            const q2 = document.querySelector('input[name="q2"]:checked')?.value;
+            const q3 = document.querySelector('input[name="q3"]:checked')?.value;
+            const q4 = document.querySelector('input[name="q4"]:checked')?.value;
+            const q5 = document.querySelector('input[name="q5"]:checked')?.value;
+
+            if (!q1 || !q2 || !q3 || !q4 || !q5) {
+                alert("Veuillez répondre à toutes les questions pour obtenir votre diagnostic.");
+                return;
+            }
+
+            let riskScore = 0;
+            let recommendations = [];
+
+            // Score calculation
+            if (q1 === 'oui') riskScore += 2;
+            if (q2 === 'non') riskScore += 3;
+            if (q2 === 'parfois') riskScore += 1;
+            if (q3 === 'non') riskScore += 3;
+            if (q3 === 'partiellement') riskScore += 1;
+            if (q4 === 'non') riskScore += 3;
+            if (q4 === 'oui_sur_site') riskScore += 1;
+            if (q5 === 'non') riskScore += 2;
+            if (q5 === 'partiellement') riskScore += 1;
+
+            // Recommendations based on answers
+            if (q1 === 'oui') recommendations.push("Assurez une protection renforcée pour les données sensibles (chiffrement, accès limité).");
+            if (q2 === 'non' || q2 === 'parfois') recommendations.push("Mettez en place des formations régulières en cybersécurité pour tous les employés.");
+            if (q3 === 'non' || q3 === 'partiellement') recommendations.push("Déployez et maintenez à jour un pare-feu et un antivirus sur l'ensemble du parc informatique.");
+            if (q4 === 'non' || q4 === 'oui_sur_site') recommendations.push("Implémentez une stratégie de sauvegarde 3-2-1, incluant des sauvegardes hors-site et testées régulièrement.");
+            if (q5 === 'non' || q5 === 'partiellement') recommendations.push("Appliquez une politique de mots de passe robustes (longueur, complexité, renouvellement) et encouragez l'authentification multi-facteurs.");
+
+            if (riskScore >= 7) {
+                vulnerabilityLevel = "Élevé";
+                riskSummary = "Votre PME présente un niveau de vulnérabilité élevé face aux cyberattaques. Des mesures correctives urgentes sont nécessaires pour protéger vos actifs.";
+            } else if (riskScore >= 4) {
+                vulnerabilityLevel = "Modéré";
+                riskSummary = "Votre PME présente un niveau de vulnérabilité modéré. Des améliorations sont recommandées pour renforcer votre défense cyber.";
+            } else {
+                vulnerabilityLevel = "Faible à Modéré";
+                riskSummary = "Votre PME semble avoir de bonnes pratiques de base. Continuez à surveiller et à améliorer votre sécurité.";
+            }
+
+            document.getElementById('vulnerability-level').textContent = vulnerabilityLevel;
+            document.getElementById('risk-summary').textContent = riskSummary;
+            document.getElementById('recommendations').innerHTML = recommendations.map(rec => `<li>${rec}</li>`).join('');
+
+            document.getElementById('tool-result').style.display = 'flex';
+            document.getElementById('tool-result').scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+<div id="qa-smoke-result" hidden></div>
+<script id="farmbuilder-affiliate-helper">
+(function () {
+  window.__UTILITY_AFFILIATE_MAP = window.__UTILITY_AFFILIATE_MAP || {};
+  document.addEventListener("click", function (event) {
+    const target = event.target.closest("[data-affiliate-slot]");
+    if (!target) return;
+    const slot = target.getAttribute("data-affiliate-slot");
+    const href = window.__UTILITY_AFFILIATE_MAP[slot];
+    if (!href) return;
+    if (target.tagName && target.tagName.toLowerCase() === "a") {
+      target.setAttribute("href", href);
+      target.removeAttribute("rel");
+      return;
+    }
+    event.preventDefault();
+    window.open(href, "_blank");
+  }, true);
+})();
+</script>
+<script id="farmbuilder-functional-qa">
+(function () {
+  function marker() {
+    let node = document.getElementById("qa-smoke-result");
+    if (node) return node;
+    node = document.createElement("div");
+    node.id = "qa-smoke-result";
+    node.hidden = true;
+    document.body.appendChild(node);
+    return node;
+  }
+
+  let qaFinished = false;
+  let qaWatchdog = null;
+
+  function normalize(text) {
+    return String(text || "").replace(/\s+/g, " ").trim();
+  }
+
+  function findForm() {
+    return document.getElementById("tool-form") || document.querySelector("form");
+  }
+
+  function findResult() {
+    return (
+      document.getElementById("tool-result") ||
+      document.querySelector("[data-result]") ||
+      document.querySelector(".tool-result, .result-card, .result, .results, .output, .preview, .diagnostic, .analysis")
+    );
+  }
+
+  function primaryAction(form) {
+    if (!form) return null;
+    return (
+      document.getElementById("tool-submit") ||
+      form.querySelector("#tool-submit") ||
+      form.querySelector("[data-primary-action]") ||
+      form.querySelector("button[type=submit]") ||
+      form.querySelector("button") ||
+      form.querySelector("input[type=submit]")
+    );
+  }
+
+  function resultSignature(node) {
+    if (!node) return "";
+    const text = normalize(node.textContent);
+    const html = normalize(node.innerHTML).slice(0, 600);
+    return `${text}||${html}`;
+  }
+
+  function resultHeadline(node) {
+    if (!node) return "";
+    const heading = node.querySelector("h1, h2, h3, strong, b");
+    return normalize(heading ? heading.textContent : "");
+  }
+
+  function sampleText(field) {
+    const key = `${field.id || ""} ${field.name || ""} ${field.placeholder || ""}`.toLowerCase();
+    if (/email/.test(key)) return "bonjour@example.com";
+    if (/url|site|website|lien/.test(key)) return "https://example.com/offre-solaire";
+    if (/phone|tel|mobile/.test(key)) return "0612345678";
+    if (/ville|city|localisation|location|region|departement|postal/.test(key)) return "Paris";
+    if (/orientation/.test(key)) return "sud";
+    if (/keyword|theme|topic|sujet|subject/.test(key)) return "energie solaire domestique";
+    if (/titre|title/.test(key)) return "Simulateur solaire maison";
+    if (/nom|name|project/.test(key)) return "Projet Horizon";
+    if (/description|notes|content|message/.test(key)) return "Maison individuelle exposee sud avec toiture exploitable.";
+    return field.placeholder || "France";
+  }
+
+  function sampleNumber(field) {
+    const key = `${field.id || ""} ${field.name || ""}`.toLowerCase();
+    if (/inclinaison|angle|slope/.test(key)) return "30";
+    if (/surface|size|m2|sqm/.test(key)) return "28";
+    if (/annee|year/.test(key)) return "2024";
+    if (/prix|price|budget|cost|amount|montant/.test(key)) return "12000";
+    const min = Number(field.min || "");
+    const max = Number(field.max || "");
+    if (Number.isFinite(min) && Number.isFinite(max) && max >= min) {
+      return String(Math.min(max, Math.max(min, min + Math.round((max - min) * 0.35))));
+    }
+    if (Number.isFinite(min)) return String(Math.max(min, 12));
+    if (Number.isFinite(max)) return String(Math.min(max, 12));
+    return field.value || "12";
+  }
+
+  function applySample(field) {
+    const tag = (field.tagName || "").toLowerCase();
+    const type = (field.type || "").toLowerCase();
+    if (field.disabled) return;
+    if (type === "hidden" || type === "submit" || type === "button" || type === "reset" || type === "image" || type === "file") {
+      return;
+    }
+    const currentValue = normalize(field.value);
+    if (tag === "select") {
+      if (currentValue) return;
+      const option = Array.from(field.options || []).find((item) => item.value && !item.disabled) || field.options[0];
+      if (option) field.value = option.value;
+      return;
+    }
+    if (type === "checkbox") {
+      if (field.checked) return;
+      field.checked = true;
+      return;
+    }
+    if (type === "radio") {
+      if (field.checked) return;
+      field.checked = true;
+      return;
+    }
+    if (type === "date") {
+      if (currentValue) return;
+      field.value = "2026-03-01";
+      return;
+    }
+    if (type === "email") {
+      if (currentValue) return;
+      field.value = "bonjour@example.com";
+      return;
+    }
+    if (type === "url") {
+      if (currentValue) return;
+      field.value = "https://example.com/offre-solaire";
+      return;
+    }
+    if (type === "tel") {
+      if (currentValue) return;
+      field.value = "0612345678";
+      return;
+    }
+    if (type === "color") {
+      if (currentValue) return;
+      field.value = "#2f855a";
+      return;
+    }
+    if (type === "number" || type === "range") {
+      if (currentValue) return;
+      field.value = sampleNumber(field);
+      return;
+    }
+    if (currentValue) return;
+    field.value = sampleText(field);
+  }
+
+  function stamp(status, detail, headline, primary) {
+    if (qaFinished) return;
+    qaFinished = true;
+    if (qaWatchdog) {
+      window.clearTimeout(qaWatchdog);
+      qaWatchdog = null;
+    }
+    const node = marker();
+    node.dataset.status = status;
+    node.dataset.mode = "native-form";
+    node.dataset.detail = detail || "";
+    node.dataset.headline = headline || "";
+    node.dataset.primary = primary || "";
+    node.dataset.viewport = window.innerWidth <= 640 ? "mobile" : "desktop";
+    window.setTimeout(function () {
+      try {
+        window.stop();
+      } catch (_error) {}
+    }, 0);
+  }
+
+  function installModalGuards() {
+    const noop = function () {};
+    const approve = function () { return true; };
+    const empty = function () { return ""; };
+    try { window.alert = noop; } catch (_error) {}
+    try { window.confirm = approve; } catch (_error) {}
+    try { window.prompt = empty; } catch (_error) {}
+  }
+
+  function triggerAction(form, action) {
+    try {
+      if (typeof form.requestSubmit === "function") {
+        form.requestSubmit(action || undefined);
+        return;
+      }
+    } catch (_error) {}
+    if (action && typeof action.click === "function") {
+      action.click();
+      return;
+    }
+    form.dispatchEvent(new Event("submit", { bubbles: true, cancelable: true }));
+  }
+
+  function inspectResult(before, attemptsLeft) {
+    const result = findResult();
+    if (!result) {
+      stamp("fail", "La zone de resultat est introuvable.", "");
+      return;
+    }
+    const after = resultSignature(result);
+    const text = normalize(result.textContent);
+    if (after && after !== before && text.length >= 24) {
+      const primary = result.querySelector("a[href], button[data-href], [data-primary-url]") || document.querySelector("#tool-result a[href]");
+      stamp("pass", "Le formulaire natif a mis a jour la zone de resultat.", resultHeadline(result), primary ? (primary.getAttribute("href") || primary.getAttribute("data-primary-url") || "") : "");
+      return;
+    }
+    if (attemptsLeft > 0) {
+      window.setTimeout(function () {
+        inspectResult(before, attemptsLeft - 1);
+      }, 250);
+      return;
+    }
+    stamp("fail", "La zone de resultat n'a pas renvoye de contenu exploitable.", resultHeadline(result));
+  }
+
+  function runSmoke() {
+    const params = new URLSearchParams(window.location.search);
+    if (params.get("__qa") !== "functional") return;
+    qaWatchdog = window.setTimeout(function () {
+      stamp("fail", "QA smoke timed out before the page reported a usable result.", "");
+    }, 7000);
+    const form = findForm();
+    if (!form) {
+      stamp("fail", "Le formulaire principal est introuvable.", "");
+      return;
+    }
+    const result = findResult();
+    const before = resultSignature(result);
+    installModalGuards();
+    try {
+      form.querySelectorAll("input, select, textarea").forEach(applySample);
+    } catch (error) {
+      stamp("fail", error && error.message ? `QA smoke sample failed: ${error.message}` : "QA smoke sample failed before submit.", "");
+      return;
+    }
+    const action = primaryAction(form);
+    try {
+      triggerAction(form, action);
+    } catch (error) {
+      stamp("fail", error && error.message ? `QA smoke submit failed: ${error.message}` : "QA smoke submit failed.", "");
+      return;
+    }
+    inspectResult(before, 10);
+  }
+
+  window.addEventListener("error", function (event) {
+    const message = event && event.message ? event.message : "JavaScript runtime error during QA smoke.";
+    stamp("fail", `QA smoke JS error: ${message}`, "");
+  }, { once: true });
+
+  window.addEventListener("unhandledrejection", function (event) {
+    const reason = event && event.reason;
+    const detail = typeof reason === "string"
+      ? reason
+      : reason && reason.message
+        ? reason.message
+        : "Unhandled promise rejection during QA smoke.";
+    stamp("fail", `QA smoke rejection: ${detail}`, "");
+  }, { once: true });
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", function () {
+      window.setTimeout(runSmoke, 60);
+    }, { once: true });
+  } else {
+    window.setTimeout(runSmoke, 60);
+  }
+})();
+</script>
+</body>
+</html>
