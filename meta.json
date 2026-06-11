@@ -1,0 +1,46 @@
+{
+  "name": "Outil d'Évaluation des Risques Cyber pour PME",
+  "description": "Évaluez la vulnérabilité de votre PME face aux cyberattaques grâce à un questionnaire ciblé. Recevez un rapport personnalisé et des recommandations pour renforcer votre sécurité.",
+  "theme": "tool",
+  "design_theme": "signal-noir",
+  "structure_preset": "evidence-journal",
+  "render_direction": "editorial-ledger",
+  "page_blueprint": "worksheet-cascade",
+  "language": "fr",
+  "country": "FR",
+  "url": null,
+  "expected_url": "https://outil-d-evaluation-des-risques-cyber-pour-pme-2.onrender.com",
+  "created": "2026-06-11T02:41:45.228264+00:00",
+  "owner_user_id": "user-1774825923424-663",
+  "owner_username": "inso",
+  "owner_display_name": "Inso",
+  "provider_space_id": "new-sites",
+  "provider_space_name": "New Sites",
+  "status": "generated",
+  "run_id": "run-1781145573017",
+  "external_site_request_id": null,
+  "external_client_ref": null,
+  "external_source_label": null,
+  "source_type": "generated",
+  "publish_target": "render",
+  "mode": "production",
+  "github": {
+    "status": "pending"
+  },
+  "deployment": {
+    "status": "pending"
+  },
+  "qa": {
+    "status": "pending"
+  },
+  "features": [
+    "Hero pattern: editorial",
+    "Proof module: rail",
+    "Design theme: Signal Noir",
+    "Render direction: Editorial Ledger",
+    "Page blueprint: Worksheet Cascade",
+    "Runtime mode: analysis_tool",
+    "Generation mode: direct_html",
+    "Artifact rendered, awaiting QA and deployment"
+  ]
+}
