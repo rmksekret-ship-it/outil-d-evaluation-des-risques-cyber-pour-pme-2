@@ -1,0 +1,290 @@
+{
+  "run_id": "run-1781145573017",
+  "job_index": 2,
+  "params": {
+    "owner_user_id": "user-1774825923424-663",
+    "owner_username": "inso",
+    "owner_display_name": "Inso",
+    "count": 3,
+    "archetype": "tool",
+    "market": "France",
+    "language": "fr",
+    "country": "FR",
+    "brief": "Un diagnostic rapide et essentiel pour les petites et moyennes entreprises afin de sécuriser leurs données et…",
+    "notes": "Évaluez la vulnérabilité de votre PME face aux cyberattaques grâce à un questionnaire ciblé. Recevez un rapport personnalisé et des recommandations pour renforcer votre sécurité.\nL'approche est sérieuse et axée sur la sécurité des données. Le design sera professionnel, technique, avec une hiérarchie claire et des conseils actionnables.",
+    "import_notes": "",
+    "growth_job_id": "",
+    "growth_slug": "",
+    "growth_kind": "",
+    "external_site_request_id": "",
+    "external_client_ref": "",
+    "external_source_label": "",
+    "dashboard_mode": "builder",
+    "network_site_format": "forum",
+    "network_primary_topic": "",
+    "network_primary_geo": "",
+    "network_domain_pool": "",
+    "network_hosting_pool": "",
+    "network_dns_strategy": "auto_pool_assign",
+    "network_domain_flow": "manual",
+    "network_content_strategy": "",
+    "network_model_concept": "google/gemini-2.5-flash-lite:nitro",
+    "network_model_seo": "google/gemini-2.5-flash-lite:nitro",
+    "network_model_build": "google/gemini-2.5-flash",
+    "network_model_qa": "anthropic/claude-haiku-4.5",
+    "network_model_growth": "google/gemini-2.5-flash-lite:nitro",
+    "network_blueprint_id": "",
+    "mode": "production",
+    "run_kind": "generated_batch",
+    "publish_target": "render",
+    "requested_publish_target": "render",
+    "provider_space_id": "new-sites",
+    "provider_space_name": "New Sites",
+    "allow_url_fallback": false,
+    "railway_project_id_override": "",
+    "railway_environment_id_override": "",
+    "railway_service_id_override": "",
+    "railway_service_name_override": "",
+    "github_repo_private": false,
+    "stage_models": {
+      "ideation": "google/gemini-2.5-flash-lite:nitro",
+      "spec": "google/gemini-2.5-flash",
+      "copy": "google/gemini-2.5-flash-lite:nitro",
+      "qa": "anthropic/claude-haiku-4.5",
+      "escalation": "anthropic/claude-sonnet-4.6"
+    },
+    "archetype_display": "mixed batch",
+    "archetype_mix": [
+      "calculator",
+      "tool",
+      "generator"
+    ],
+    "forced_design_theme": "signal-noir",
+    "forced_structure_preset": "evidence-journal",
+    "site_idea_title": "Outil d'Évaluation des Risques Cyber pour PME",
+    "site_idea_summary": "Évaluez la vulnérabilité de votre PME face aux cyberattaques grâce à un questionnaire ciblé. Recevez un rapport personnalisé et des recommandations pour renforcer votre sécurité."
+  },
+  "site_spec": {
+    "slug": "outil-d-evaluation-des-risques-cyber-pour-pme-2",
+    "theme": {
+      "name": "Signal Noir",
+      "slug": "signal-noir",
+      "eyebrow": "Performance Pipeline",
+      "family": "performance-dark",
+      "moods": [
+        "performance",
+        "technical",
+        "premium",
+        "dark"
+      ],
+      "archetypes": [
+        "tool",
+        "calculator",
+        "generator"
+      ],
+      "niches": [
+        "analytics",
+        "insurance",
+        "finance",
+        "developer",
+        "qa"
+      ],
+      "keywords": [
+        "efficiency",
+        "dashboard",
+        "metrics",
+        "conversion"
+      ],
+      "token_index": [
+        "analytics",
+        "calculator",
+        "conversion",
+        "dark",
+        "dashboard",
+        "developer",
+        "efficiency",
+        "finance",
+        "generator",
+        "insurance",
+        "metrics",
+        "noir",
+        "performance",
+        "pipeline",
+        "premium",
+        "signal",
+        "technical",
+        "tool"
+      ],
+      "font_embed": "https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Space+Grotesk:wght@400;500;700&display=swap",
+      "display_font": "\"Fraunces\", serif",
+      "body_font": "\"Space Grotesk\", sans-serif",
+      "layout": "split",
+      "card_style": "glass",
+      "button_style": "glow",
+      "decor_style": "grid",
+      "hero_template": "1.08fr 0.92fr",
+      "seo_template": "1.18fr 0.82fr",
+      "feature_columns": 3,
+      "faq_columns": 3,
+      "hero_min_height": "78vh",
+      "panel_radius": "30px",
+      "card_radius": "24px",
+      "chip_radius": "999px",
+      "button_radius": "18px",
+      "outline_width": "1px",
+      "backdrop_blur": "18px",
+      "palette": {
+        "bg": "#0c0e11",
+        "surface": "rgba(18, 22, 28, 0.86)",
+        "surface_border": "rgba(255, 255, 255, 0.08)",
+        "text": "#f7f1e8",
+        "muted": "#b0aba2",
+        "accent": "#e0ff4f",
+        "accent_alt": "#2dd4bf",
+        "hero_glow": "rgba(224, 255, 79, 0.18)",
+        "button_text": "#0d1006",
+        "panel_alt": "rgba(255, 255, 255, 0.04)",
+        "shadow": "0 28px 84px rgba(0, 0, 0, 0.34)",
+        "input_fill": "rgba(255, 255, 255, 0.04)"
+      }
+    },
+    "structure": {
+      "name": "Evidence Journal",
+      "slug": "evidence-journal",
+      "hero_variant": "editorial",
+      "proof_variant": "rail",
+      "section_order": [
+        "proof",
+        "seo",
+        "features",
+        "faq"
+      ],
+      "feature_columns": 2,
+      "faq_columns": 2,
+      "family": "editorial-journal",
+      "moods": [
+        "trust",
+        "narrative",
+        "research"
+      ],
+      "archetypes": [
+        "calculator",
+        "generator",
+        "tool"
+      ],
+      "niches": [
+        "legal",
+        "health",
+        "consulting",
+        "compliance"
+      ],
+      "keywords": [
+        "evidence",
+        "journal",
+        "narrative",
+        "proof"
+      ],
+      "token_index": [
+        "calculator",
+        "compliance",
+        "consulting",
+        "editorial",
+        "evidence",
+        "faq",
+        "features",
+        "generator",
+        "health",
+        "journal",
+        "legal",
+        "narrative",
+        "proof",
+        "rail",
+        "research",
+        "seo",
+        "tool",
+        "trust"
+      ]
+    },
+    "render_direction": "editorial-ledger",
+    "render_direction_name": "Editorial Ledger",
+    "page_blueprint": "worksheet-cascade",
+    "page_blueprint_name": "Worksheet Cascade",
+    "title": "Outil d'Évaluation des Risques Cyber pour PME",
+    "tagline": "Pourquoi un Diagnostic Cyber est Crucial",
+    "description": "Évaluez la vulnérabilité de votre PME face aux cyberattaques grâce à un questionnaire ciblé. Recevez un rapport personnalisé et des recommandations pour renforcer votre sécurité.",
+    "feature_prefix": "Bloc",
+    "action": "Utiliser l'outil",
+    "cta_primary": "Obtenir Mon Diagnostic",
+    "cta_secondary": "Consulter la FAQ",
+    "inputs": [
+      {
+        "id": "primary",
+        "label": "Texte ou besoin",
+        "type": "text",
+        "placeholder": "Votre besoin principal",
+        "weight": 1.0
+      },
+      {
+        "id": "context",
+        "label": "Contexte",
+        "type": "text",
+        "placeholder": "Situation ou objectif",
+        "weight": 1.0
+      },
+      {
+        "id": "scope",
+        "label": "Intensité",
+        "type": "number",
+        "placeholder": "3",
+        "weight": 0.3
+      }
+    ],
+    "hero_metrics": [
+      {
+        "value": "Editorial Ledger",
+        "label": "Cadence"
+      },
+      {
+        "value": "3",
+        "label": "Entrées"
+      },
+      {
+        "value": "Résultat recommandé",
+        "label": "Sortie"
+      }
+    ],
+    "trust_labels": [
+      "Editorial Ledger",
+      "Obtenir Mon Diagnostic",
+      "Résultat recommandé",
+      "Utilitaire immédiat",
+      "Structure SEO claire"
+    ],
+    "result_label": "Résultat recommandé",
+    "result_unit": "",
+    "runtime_mode": "analysis_tool",
+    "page_variant": "editorial",
+    "faq_topic": "Outil d'Évaluation des Risques Cyber pour PME",
+    "faq_entries": [
+      {
+        "question": "Pourquoi utiliser cet outil pour Outil d'Évaluation des Risques Cyber pour PME ?",
+        "answer": "Il aide à cadrer le besoin rapidement et à orienter vers une prochaine action claire sur le marché France."
+      },
+      {
+        "question": "Le résultat est-il immédiat ?",
+        "answer": "Oui. L'interface est pensée pour une réponse rapide, lisible et exploitable dès la première interaction."
+      },
+      {
+        "question": "Cette page est-elle adaptée au SEO ?",
+        "answer": "Oui. La structure mélange utilité, clarté éditoriale et signaux de confiance sans surcharger l'expérience."
+      }
+    ],
+    "seo_paragraphs": [
+      "Cette page capte une intention forte autour de Outil d'Évaluation des Risques Cyber pour PME et la transforme en action utile pour un public situé sur France.",
+      "Le format hero-first accélère la compréhension, réduit les frictions et améliore la lisibilité sur mobile comme sur desktop.",
+      "Le socle reste volontairement simple pour faciliter les tests, la QA continue et les variations SEO."
+    ],
+    "document_html": "<!DOCTYPE html>\n<html lang=\"fr\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Outil d&#x27;Évaluation des Risques Cyber pour PME | Pourquoi un Diagnostic Cyber est Crucial</title>\n    <meta name=\"description\" content=\"Évaluez la vulnérabilité de votre PME face aux cyberattaques grâce à un questionnaire ciblé. Recevez un rapport personnalisé et des recommandations pour renforcer votre sécurité.\">\n    <style>\n        :root {\n            --color-primary: #0A0A0A;\n            --color-secondary: #1A1A1A;\n            --color-accent: #FFD700;\n            --color-text: #E0E0E0;\n            --color-light-text: #B0B0B0;\n            --color-border: #333333;\n            --font-display: 'Arial Black', Gadget, sans-serif;\n            --font-body: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;\n        }\n\n        body {\n            font-family: var(--font-body);\n            color: var(--color-text);\n            background-color: var(--color-primary);\n            margin: 0;\n            line-height: 1.6;\n            scroll-behavior: smooth;\n        }\n\n        header {\n            background-color: var(--color-secondary);\n            padding: 2rem 0;\n            text-align: center;\n            border-bottom: 1px solid var(--color-border);\n        }\n\n        h1 {\n            font-family: var(--font-display);\n            color: var(--color-accent);\n            font-size: 2.8rem;\n            margin: 0;\n            letter-spacing: 1px;\n            text-transform: uppercase;\n        }\n\n        .subtitle {\n            font-size: 1.2rem;\n            color: var(--color-light-text);\n            margin-top: 0.5rem;\n        }\n\n        .container {\n            max-width: 1000px;\n            margin: 0 auto;\n            padding: 2rem;\n        }\n\n        section {\n            padding: 4rem 0;\n            border-bottom: 1px solid var(--color-border);\n        }\n\n        section:last-of-type {\n            border-bottom: none;\n        }\n\n        h2 {\n            font-family: var(--font-display);\n            color: var(--color-accent);\n            font-size: 2.2rem;\n            text-align: center;\n            margin-bottom: 3rem;\n            position: relative;\n            text-transform: uppercase;\n        }\n\n        h2::after {\n            content: '';\n            display: block;\n            width: 60px;\n            height: 3px;\n            background-color: var(--color-accent);\n            margin: 1rem auto 0;\n        }\n\n        .intro-text {\n            font-size: 1.1rem;\n            line-height: 1.8;\n            margin-bottom: 2.5rem;\n            text-align: center;\n            max-width: 800px;\n            margin-left: auto;\n            margin-right: auto;\n            color: var(--color-light-text);\n        }\n\n        .card-grid {\n            display: grid;\n            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));\n            gap: 2rem;\n            margin-top: 3rem;\n        }\n\n        .card {\n            background-color: var(--color-secondary);\n            padding: 2rem;\n            border-radius: 8px;\n            border: 1px solid var(--color-border);\n            transition: transform 0.3s ease, box-shadow 0.3s ease;\n            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);\n        }\n\n        .card:hover {\n            transform: translateY(-5px);\n            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);\n        }\n\n        .card h3 {\n            color: var(--color-accent);\n            font-size: 1.5rem;\n            margin-top: 0;\n            border-bottom: 1px solid var(--color-border);\n            padding-bottom: 1rem;\n            margin-bottom: 1.5rem;\n        }\n\n        .card p {\n            color: var(--color-light-text);\n            font-size: 0.95rem;\n        }\n\n        .tool-section {\n            background-color: var(--color-secondary);\n            padding: 4rem 2rem;\n            border-radius: 10px;\n            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);\n            border: 1px solid var(--color-border);\n        }\n\n        .tool-section h2 {\n            margin-bottom: 2rem;\n            color: var(--color-accent);\n        }\n\n        #tool-form {\n            display: flex;\n            flex-direction: column;\n            gap: 1.5rem;\n        }\n\n        .form-group {\n            margin-bottom: 1.2rem;\n        }\n\n        .form-group label {\n            display: block;\n            margin-bottom: 0.7rem;\n            font-weight: bold;\n            color: var(--color-text);\n            font-size: 1.1rem;\n        }\n\n        .form-group input[type=\"radio\"] {\n            margin-right: 0.5rem;\n            accent-color: var(--color-accent);\n        }\n\n        .form-group div {\n            display: flex;\n            flex-wrap: wrap;\n            gap: 1rem;\n            margin-top: 0.5rem;\n        }\n\n        .form-group div label {\n            font-weight: normal;\n            color: var(--color-light-text);\n            cursor: pointer;\n            display: flex;\n            align-items: center;\n        }\n\n        #tool-submit {\n            background-color: var(--color-accent);\n            color: var(--color-primary);\n            border: none;\n            padding: 1rem 2rem;\n            font-size: 1.2rem;\n            font-weight: bold;\n            border-radius: 5px;\n            cursor: pointer;\n            transition: background-color 0.3s ease, transform 0.2s ease;\n            margin-top: 2rem;\n            align-self: center;\n        }\n\n        #tool-submit:hover {\n            background-color: #E6B800;\n            transform: translateY(-2px);\n        }\n\n        #tool-result {\n            margin-top: 3rem;\n            padding: 2rem;\n            background-color: var(--color-primary);\n            border-radius: 8px;\n            border: 1px solid var(--color-border);\n            min-height: 150px;\n            display: none;\n            flex-direction: column;\n            gap: 1.5rem;\n        }\n\n        #tool-result h3 {\n            color: var(--color-accent);\n            font-size: 1.8rem;\n            margin-bottom: 1.5rem;\n            text-align: center;\n        }\n\n        .result-section {\n            background-color: var(--color-secondary);\n            padding: 1.5rem;\n            border-radius: 6px;\n            border: 1px solid var(--color-border);\n        }\n\n        .result-section h4 {\n            color: var(--color-text);\n            margin-top: 0;\n            margin-bottom: 1rem;\n            font-size: 1.3rem;\n        }\n\n        .result-section p {\n            color: var(--color-light-text);\n            margin-bottom: 0.5rem;\n        }\n\n        .action-button {\n            display: block;\n            width: fit-content;\n            margin: 2rem auto 0;\n            background-color: transparent;\n            color: var(--color-accent);\n            border: 2px solid var(--color-accent);\n            padding: 0.8rem 1.8rem;\n            border-radius: 5px;\n            text-decoration: none;\n            font-weight: bold;\n            transition: background-color 0.3s ease, color 0.3s ease;\n            cursor: pointer;\n        }\n\n        .action-button:hover {\n            background-color: var(--color-accent);\n            color: var(--color-primary);\n        }\n\n        .seo-section {\n            padding: 4rem 2rem;\n            background-color: var(--color-primary);\n            color: var(--color-light-text);\n            font-size: 0.9rem;\n            line-height: 1.7;\n            text-align: justify;\n        }\n\n        .seo-section h3 {\n            color: var(--color-accent);\n            font-size: 1.6rem;\n            margin-bottom: 1.5rem;\n            text-align: center;\n        }\n\n        .seo-section a {\n            color: var(--color-accent);\n            text-decoration: none;\n        }\n\n        .seo-section a:hover {\n            text-decoration: underline;\n        }\n\n        footer {\n            background-color: var(--color-secondary);\n            text-align: center;\n            padding: 2rem 0;\n            color: var(--color-light-text);\n            font-size: 0.85rem;\n            border-top: 1px solid var(--color-border);\n        }\n    </style>\n    <meta name=\"robots\" content=\"index, follow\">\n    <link rel=\"canonical\" href=\"https://outil-d-evaluation-des-risques-cyber-pour-pme-2.onrender.com\">\n    <meta property=\"og:title\" content=\"Outil d&#x27;Évaluation des Risques Cyber pour PME\">\n    <meta property=\"og:description\" content=\"Évaluez la vulnérabilité de votre PME face aux cyberattaques grâce à un questionnaire ciblé. Recevez un rapport personnalisé et des recommandations pour renforcer votre sécurité.\">\n    <meta property=\"og:url\" content=\"https://outil-d-evaluation-des-risques-cyber-pour-pme-2.onrender.com\">\n    <meta property=\"og:type\" content=\"website\">\n    <script type=\"application/ld+json\">{\"@context\": \"https://schema.org\", \"@type\": \"WebApplication\", \"name\": \"Outil d'Évaluation des Risques Cyber pour PME\", \"description\": \"Évaluez la vulnérabilité de votre PME face aux cyberattaques grâce à un questionnaire ciblé. Recevez un rapport personnalisé et des recommandations pour renforcer votre sécurité.\", \"url\": \"https://outil-d-evaluation-des-risques-cyber-pour-pme-2.onrender.com\", \"applicationCategory\": \"UtilityApplication\", \"operatingSystem\": \"Web Browser\"}</script>\n</head>\n<body data-site-slug=\"outil-d-evaluation-des-risques-cyber-pour-pme-2\" data-runtime-mode=\"analysis_tool\">\n    <header>\n        <div class=\"container\">\n            <h1>Outil d'Évaluation des Risques Cyber pour PME</h1>\n            <p class=\"subtitle\">Sécurisez votre avenir numérique : une analyse rapide, des recommandations concrètes.</p>\n        </div>\n    </header>\n\n    <main>\n        <section class=\"container\">\n            <h2>Pourquoi un Diagnostic Cyber est Crucial</h2>\n            <p class=\"intro-text\">Les cybermenaces évoluent constamment, et les PME sont des cibles privilégiées. Sans une évaluation régulière, vous exposez votre entreprise à des risques de pertes financières, de réputation et de données. Notre outil vous offre une vision claire de votre posture de sécurité actuelle.</p>\n\n            <div class=\"card-grid\">\n                <div class=\"card\">\n                    <h3>Identification des Vulnérabilités</h3>\n                    <p>Découvrez les failles potentielles de votre système avant qu'elles ne soient exploitées par des acteurs malveillants.</p>\n                </div>\n                <div class=\"card\">\n                    <h3>Conformité Réglementaire</h3>\n                    <p>Assurez-vous de respecter les normes en vigueur (RGPD, etc.) et évitez les sanctions coûteuses.</p>\n                </div>\n                <div class=\"card\">\n                    <h3>Protection de votre Réputation</h3>\n                    <p>Une seule cyberattaque peut nuire durablement à la confiance de vos clients et partenaires. Agissez préventivement.</p>\n                </div>\n                <div class=\"card\">\n                    <h3>Optimisation des Investissements</h3>\n                    <p>Dirigez vos efforts et budgets de sécurité là où ils sont le plus nécessaires, pour une protection maximale.</p>\n                </div>\n            </div>\n        </section>\n\n        <section class=\"container\">\n            <div class=\"tool-section\">\n                <h2>Votre Diagnostic Cyber Personnalisé</h2>\n                <p class=\"intro-text\" style=\"color: var(--color-text);\">Répondez à quelques questions simples pour obtenir une première évaluation de vos risques. Ce questionnaire est conçu pour être rapide et pertinent pour la plupart des PME françaises.</p>\n\n                <form id=\"tool-form\">\n                    <div class=\"form-group\">\n                        <label>1. Votre entreprise stocke-t-elle des données sensibles (clients, financières, santé) ?</label>\n                        <div>\n                            <label><input type=\"radio\" name=\"q1\" value=\"oui\" required> Oui</label>\n                            <label><input type=\"radio\" name=\"q1\" value=\"non\"> Non</label>\n                        </div>\n                    </div>\n\n                    <div class=\"form-group\">\n                        <label>2. Vos employés ont-ils une formation régulière sur la cybersécurité ?</label>\n                        <div>\n                            <label><input type=\"radio\" name=\"q2\" value=\"oui\" required> Oui, régulièrement</label>\n                            <label><input type=\"radio\" name=\"q2\" value=\"parfois\"> Parfois ou à l'arrivée</label>\n                            <label><input type=\"radio\" name=\"q2\" value=\"non\"> Non ou très rarement</label>\n                        </div>\n                    </div>\n\n                    <div class=\"form-group\">\n                        <label>3. Utilisez-vous un pare-feu et un antivirus à jour sur tous vos équipements ?</label>\n                        <div>\n                            <label><input type=\"radio\" name=\"q3\" value=\"oui\" required> Oui, systématiquement</label>\n                            <label><input type=\"radio\" name=\"q3\" value=\"partiellement\"> Partiellement</label>\n                            <label><input type=\"radio\" name=\"q3\" value=\"non\"> Non ou je ne sais pas</label>\n                        </div>\n                    </div>\n\n                    <div class=\"form-group\">\n                        <label>4. Effectuez-vous des sauvegardes régulières de vos données essentielles ?</label>\n                        <div>\n                            <label><input type=\"radio\" name=\"q4\" value=\"oui_hors_site\" required> Oui, et hors-site</label>\n                            <label><input type=\"radio\" name=\"q4\" value=\"oui_sur_site\"> Oui, mais uniquement sur site</label>\n                            <label><input type=\"radio\" name=\"q4\" value=\"non\"> Non ou très rarement</label>\n                        </div>\n                    </div>\n\n                    <div class=\"form-group\">\n                        <label>5. Avez-vous une politique de mots de passe robustes (longueur, caractères spéciaux) ?</label>\n                        <div>\n                            <label><input type=\"radio\" name=\"q5\" value=\"oui\" required> Oui, appliquée strictement</label>\n                            <label><input type=\"radio\" name=\"q5\" value=\"partiellement\"> En partie ou peu contrôlée</label>\n                            <label><input type=\"radio\" name=\"q5\" value=\"non\"> Non</label>\n                        </div>\n                    </div>\n\n                    <button type=\"submit\" id=\"tool-submit\">Obtenir Mon Diagnostic</button>\n                </form>\n\n                <div id=\"tool-result\" style=\"display: none;\">\n                    <h3 id=\"result-headline\">Votre Résultat d'Évaluation des Risques Cyber</h3>\n                    <div class=\"result-section\">\n                        <h4>Niveau de Vulnérabilité Estimé : <span id=\"vulnerability-level\" style=\"color: var(--color-accent);\"></span></h4>\n                        <p id=\"risk-summary\"></p>\n                    </div>\n                    <div class=\"result-section\">\n                        <h4>Recommandations Clés :</h4>\n                        <p id=\"recommendations\"></p>\n                    </div>\n                    <a href=\"#\" class=\"action-button\" data-affiliate-slot=\"cyber-audit-pro-fr\">Besoin d'un Audit Plus Approfondi ?</a>\n                </div>\n            </div>\n        </section>\n\n        <section class=\"container\">\n            <h2>Notre Engagement : Votre Sécurité</h2>\n            <p class=\"intro-text\">Nous sommes dévoués à fournir aux PME les outils nécessaires pour naviguer en toute sécurité dans le paysage numérique. Notre expertise se manifeste à travers des solutions claires et actionnables, conçues pour les réalités du marché français.</p>\n            <div class=\"card-grid\">\n                <div class=\"card\">\n                    <h3>Approche Pédagogique</h3>\n                    <p>Nous expliquons les concepts complexes de manière simple, pour que chacun puisse comprendre les enjeux.</p>\n                </div>\n                <div class=\"card\">\n                    <h3>Solutions Concrètes</h3>\n                    <p>Fini le jargon technique ! Nous vous offrons des actions précises à mettre en œuvre immédiatement.</p>\n                </div>\n                <div class=\"card\">\n                    <h3>Veille Technologique</h3>\n                    <p>Notre veille constante assure que nos recommandations sont toujours à la pointe des dernières menaces et défenses.</p>\n                </div>\n            </div>\n        </section>\n    </main>\n\n    <div class=\"seo-section\">\n        <div class=\"container\">\n            <h3>Cybersécurité pour PME en France : Protégez Votre Entreprise</h3>\n            <p>Dans le contexte actuel, la <a href=\"#\">cybersécurité PME</a> est devenue une priorité absolue pour les entrepreneurs français. Face à l'augmentation des <a href=\"#\">cyberattaques</a>, un <a href=\"#\">diagnostic cybersécurité</a> régulier est indispensable pour toute petite et moyenne entreprise souhaitant sécuriser ses actifs numériques. Notre <a href=\"#\">outil d'évaluation des risques cyber</a> offre une analyse rapide de votre posture de sécurité, couvrant des aspects critiques comme la protection des <a href=\"#\">données sensibles</a>, la formation de vos employés, la mise en place d'<a href=\"#\">antivirus pour entreprise</a> et de <a href=\"#\">pare-feu professionnel</a>, ainsi que l'importance des <a href=\"#\">sauvegardes de données</a>. Les PME en France sont souvent ciblées en raison de ressources limitées, mais les conséquences d'une brèche peuvent être dévastatrices. Notre plateforme vous aide à identifier vos <a href=\"#\">vulnérabilités de sécurité</a> et à mettre en œuvre des <a href=\"#\">stratégies de défense cyber</a> efficaces. Que vous cherchiez à améliorer votre <a href=\"#\">conformité RGPD</a> ou à protéger votre réputation, un audit préliminaire est le premier pas. Découvrez comment renforcer votre <a href=\"#\">sécurité informatique</a> et protéger votre entreprise des menaces numériques avec des <a href=\"#\">recommandations cyber personnalisées</a> adaptées au marché français.</p>\n        </div>\n    </div>\n\n    <footer>\n        <div class=\"container\">\n            <p>&copy; 2023 Sécurité Cyber PME. Tous droits réservés.</p>\n        </div>\n    </footer>\n\n    <script>\n        document.getElementById('tool-form').addEventListener('submit', function(event) {\n            event.preventDefault();\n\n            const q1 = document.querySelector('input[name=\"q1\"]:checked')?.value;\n            const q2 = document.querySelector('input[name=\"q2\"]:checked')?.value;\n            const q3 = document.querySelector('input[name=\"q3\"]:checked')?.value;\n            const q4 = document.querySelector('input[name=\"q4\"]:checked')?.value;\n            const q5 = document.querySelector('input[name=\"q5\"]:checked')?.value;\n\n            if (!q1 || !q2 || !q3 || !q4 || !q5) {\n                alert(\"Veuillez répondre à toutes les questions pour obtenir votre diagnostic.\");\n                return;\n            }\n\n            let riskScore = 0;\n            let recommendations = [];\n\n            // Score calculation\n            if (q1 === 'oui') riskScore += 2;\n            if (q2 === 'non') riskScore += 3;\n            if (q2 === 'parfois') riskScore += 1;\n            if (q3 === 'non') riskScore += 3;\n            if (q3 === 'partiellement') riskScore += 1;\n            if (q4 === 'non') riskScore += 3;\n            if (q4 === 'oui_sur_site') riskScore += 1;\n            if (q5 === 'non') riskScore += 2;\n            if (q5 === 'partiellement') riskScore += 1;\n\n            // Recommendations based on answers\n            if (q1 === 'oui') recommendations.push(\"Assurez une protection renforcée pour les données sensibles (chiffrement, accès limité).\");\n            if (q2 === 'non' || q2 === 'parfois') recommendations.push(\"Mettez en place des formations régulières en cybersécurité pour tous les employés.\");\n            if (q3 === 'non' || q3 === 'partiellement') recommendations.push(\"Déployez et maintenez à jour un pare-feu et un antivirus sur l'ensemble du parc informatique.\");\n            if (q4 === 'non' || q4 === 'oui_sur_site') recommendations.push(\"Implémentez une stratégie de sauvegarde 3-2-1, incluant des sauvegardes hors-site et testées régulièrement.\");\n            if (q5 === 'non' || q5 === 'partiellement') recommendations.push(\"Appliquez une politique de mots de passe robustes (longueur, complexité, renouvellement) et encouragez l'authentification multi-facteurs.\");\n\n            if (riskScore >= 7) {\n                vulnerabilityLevel = \"Élevé\";\n                riskSummary = \"Votre PME présente un niveau de vulnérabilité élevé face aux cyberattaques. Des mesures correctives urgentes sont nécessaires pour protéger vos actifs.\";\n            } else if (riskScore >= 4) {\n                vulnerabilityLevel = \"Modéré\";\n                riskSummary = \"Votre PME présente un niveau de vulnérabilité modéré. Des améliorations sont recommandées pour renforcer votre défense cyber.\";\n            } else {\n                vulnerabilityLevel = \"Faible à Modéré\";\n                riskSummary = \"Votre PME semble avoir de bonnes pratiques de base. Continuez à surveiller et à améliorer votre sécurité.\";\n            }\n\n            document.getElementById('vulnerability-level').textContent = vulnerabilityLevel;\n            document.getElementById('risk-summary').textContent = riskSummary;\n            document.getElementById('recommendations').innerHTML = recommendations.map(rec => `<li>${rec}</li>`).join('');\n\n            document.getElementById('tool-result').style.display = 'flex';\n            document.getElementById('tool-result').scrollIntoView({ behavior: 'smooth' });\n        });\n    </script>\n<div id=\"qa-smoke-result\" hidden></div>\n<script id=\"farmbuilder-affiliate-helper\">\n(function () {\n  window.__UTILITY_AFFILIATE_MAP = window.__UTILITY_AFFILIATE_MAP || {};\n  document.addEventListener(\"click\", function (event) {\n    const target = event.target.closest(\"[data-affiliate-slot]\");\n    if (!target) return;\n    const slot = target.getAttribute(\"data-affiliate-slot\");\n    const href = window.__UTILITY_AFFILIATE_MAP[slot];\n    if (!href) return;\n    if (target.tagName && target.tagName.toLowerCase() === \"a\") {\n      target.setAttribute(\"href\", href);\n      target.removeAttribute(\"rel\");\n      return;\n    }\n    event.preventDefault();\n    window.open(href, \"_blank\");\n  }, true);\n})();\n</script>\n<script id=\"farmbuilder-functional-qa\">\n(function () {\n  function marker() {\n    let node = document.getElementById(\"qa-smoke-result\");\n    if (node) return node;\n    node = document.createElement(\"div\");\n    node.id = \"qa-smoke-result\";\n    node.hidden = true;\n    document.body.appendChild(node);\n    return node;\n  }\n\n  let qaFinished = false;\n  let qaWatchdog = null;\n\n  function normalize(text) {\n    return String(text || \"\").replace(/\\s+/g, \" \").trim();\n  }\n\n  function findForm() {\n    return document.getElementById(\"tool-form\") || document.querySelector(\"form\");\n  }\n\n  function findResult() {\n    return (\n      document.getElementById(\"tool-result\") ||\n      document.querySelector(\"[data-result]\") ||\n      document.querySelector(\".tool-result, .result-card, .result, .results, .output, .preview, .diagnostic, .analysis\")\n    );\n  }\n\n  function primaryAction(form) {\n    if (!form) return null;\n    return (\n      document.getElementById(\"tool-submit\") ||\n      form.querySelector(\"#tool-submit\") ||\n      form.querySelector(\"[data-primary-action]\") ||\n      form.querySelector(\"button[type=submit]\") ||\n      form.querySelector(\"button\") ||\n      form.querySelector(\"input[type=submit]\")\n    );\n  }\n\n  function resultSignature(node) {\n    if (!node) return \"\";\n    const text = normalize(node.textContent);\n    const html = normalize(node.innerHTML).slice(0, 600);\n    return `${text}||${html}`;\n  }\n\n  function resultHeadline(node) {\n    if (!node) return \"\";\n    const heading = node.querySelector(\"h1, h2, h3, strong, b\");\n    return normalize(heading ? heading.textContent : \"\");\n  }\n\n  function sampleText(field) {\n    const key = `${field.id || \"\"} ${field.name || \"\"} ${field.placeholder || \"\"}`.toLowerCase();\n    if (/email/.test(key)) return \"bonjour@example.com\";\n    if (/url|site|website|lien/.test(key)) return \"https://example.com/offre-solaire\";\n    if (/phone|tel|mobile/.test(key)) return \"0612345678\";\n    if (/ville|city|localisation|location|region|departement|postal/.test(key)) return \"Paris\";\n    if (/orientation/.test(key)) return \"sud\";\n    if (/keyword|theme|topic|sujet|subject/.test(key)) return \"energie solaire domestique\";\n    if (/titre|title/.test(key)) return \"Simulateur solaire maison\";\n    if (/nom|name|project/.test(key)) return \"Projet Horizon\";\n    if (/description|notes|content|message/.test(key)) return \"Maison individuelle exposee sud avec toiture exploitable.\";\n    return field.placeholder || \"France\";\n  }\n\n  function sampleNumber(field) {\n    const key = `${field.id || \"\"} ${field.name || \"\"}`.toLowerCase();\n    if (/inclinaison|angle|slope/.test(key)) return \"30\";\n    if (/surface|size|m2|sqm/.test(key)) return \"28\";\n    if (/annee|year/.test(key)) return \"2024\";\n    if (/prix|price|budget|cost|amount|montant/.test(key)) return \"12000\";\n    const min = Number(field.min || \"\");\n    const max = Number(field.max || \"\");\n    if (Number.isFinite(min) && Number.isFinite(max) && max >= min) {\n      return String(Math.min(max, Math.max(min, min + Math.round((max - min) * 0.35))));\n    }\n    if (Number.isFinite(min)) return String(Math.max(min, 12));\n    if (Number.isFinite(max)) return String(Math.min(max, 12));\n    return field.value || \"12\";\n  }\n\n  function applySample(field) {\n    const tag = (field.tagName || \"\").toLowerCase();\n    const type = (field.type || \"\").toLowerCase();\n    if (field.disabled) return;\n    if (type === \"hidden\" || type === \"submit\" || type === \"button\" || type === \"reset\" || type === \"image\" || type === \"file\") {\n      return;\n    }\n    const currentValue = normalize(field.value);\n    if (tag === \"select\") {\n      if (currentValue) return;\n      const option = Array.from(field.options || []).find((item) => item.value && !item.disabled) || field.options[0];\n      if (option) field.value = option.value;\n      return;\n    }\n    if (type === \"checkbox\") {\n      if (field.checked) return;\n      field.checked = true;\n      return;\n    }\n    if (type === \"radio\") {\n      if (field.checked) return;\n      field.checked = true;\n      return;\n    }\n    if (type === \"date\") {\n      if (currentValue) return;\n      field.value = \"2026-03-01\";\n      return;\n    }\n    if (type === \"email\") {\n      if (currentValue) return;\n      field.value = \"bonjour@example.com\";\n      return;\n    }\n    if (type === \"url\") {\n      if (currentValue) return;\n      field.value = \"https://example.com/offre-solaire\";\n      return;\n    }\n    if (type === \"tel\") {\n      if (currentValue) return;\n      field.value = \"0612345678\";\n      return;\n    }\n    if (type === \"color\") {\n      if (currentValue) return;\n      field.value = \"#2f855a\";\n      return;\n    }\n    if (type === \"number\" || type === \"range\") {\n      if (currentValue) return;\n      field.value = sampleNumber(field);\n      return;\n    }\n    if (currentValue) return;\n    field.value = sampleText(field);\n  }\n\n  function stamp(status, detail, headline, primary) {\n    if (qaFinished) return;\n    qaFinished = true;\n    if (qaWatchdog) {\n      window.clearTimeout(qaWatchdog);\n      qaWatchdog = null;\n    }\n    const node = marker();\n    node.dataset.status = status;\n    node.dataset.mode = \"native-form\";\n    node.dataset.detail = detail || \"\";\n    node.dataset.headline = headline || \"\";\n    node.dataset.primary = primary || \"\";\n    node.dataset.viewport = window.innerWidth <= 640 ? \"mobile\" : \"desktop\";\n    window.setTimeout(function () {\n      try {\n        window.stop();\n      } catch (_error) {}\n    }, 0);\n  }\n\n  function installModalGuards() {\n    const noop = function () {};\n    const approve = function () { return true; };\n    const empty = function () { return \"\"; };\n    try { window.alert = noop; } catch (_error) {}\n    try { window.confirm = approve; } catch (_error) {}\n    try { window.prompt = empty; } catch (_error) {}\n  }\n\n  function triggerAction(form, action) {\n    try {\n      if (typeof form.requestSubmit === \"function\") {\n        form.requestSubmit(action || undefined);\n        return;\n      }\n    } catch (_error) {}\n    if (action && typeof action.click === \"function\") {\n      action.click();\n      return;\n    }\n    form.dispatchEvent(new Event(\"submit\", { bubbles: true, cancelable: true }));\n  }\n\n  function inspectResult(before, attemptsLeft) {\n    const result = findResult();\n    if (!result) {\n      stamp(\"fail\", \"La zone de resultat est introuvable.\", \"\");\n      return;\n    }\n    const after = resultSignature(result);\n    const text = normalize(result.textContent);\n    if (after && after !== before && text.length >= 24) {\n      const primary = result.querySelector(\"a[href], button[data-href], [data-primary-url]\") || document.querySelector(\"#tool-result a[href]\");\n      stamp(\"pass\", \"Le formulaire natif a mis a jour la zone de resultat.\", resultHeadline(result), primary ? (primary.getAttribute(\"href\") || primary.getAttribute(\"data-primary-url\") || \"\") : \"\");\n      return;\n    }\n    if (attemptsLeft > 0) {\n      window.setTimeout(function () {\n        inspectResult(before, attemptsLeft - 1);\n      }, 250);\n      return;\n    }\n    stamp(\"fail\", \"La zone de resultat n'a pas renvoye de contenu exploitable.\", resultHeadline(result));\n  }\n\n  function runSmoke() {\n    const params = new URLSearchParams(window.location.search);\n    if (params.get(\"__qa\") !== \"functional\") return;\n    qaWatchdog = window.setTimeout(function () {\n      stamp(\"fail\", \"QA smoke timed out before the page reported a usable result.\", \"\");\n    }, 7000);\n    const form = findForm();\n    if (!form) {\n      stamp(\"fail\", \"Le formulaire principal est introuvable.\", \"\");\n      return;\n    }\n    const result = findResult();\n    const before = resultSignature(result);\n    installModalGuards();\n    try {\n      form.querySelectorAll(\"input, select, textarea\").forEach(applySample);\n    } catch (error) {\n      stamp(\"fail\", error && error.message ? `QA smoke sample failed: ${error.message}` : \"QA smoke sample failed before submit.\", \"\");\n      return;\n    }\n    const action = primaryAction(form);\n    try {\n      triggerAction(form, action);\n    } catch (error) {\n      stamp(\"fail\", error && error.message ? `QA smoke submit failed: ${error.message}` : \"QA smoke submit failed.\", \"\");\n      return;\n    }\n    inspectResult(before, 10);\n  }\n\n  window.addEventListener(\"error\", function (event) {\n    const message = event && event.message ? event.message : \"JavaScript runtime error during QA smoke.\";\n    stamp(\"fail\", `QA smoke JS error: ${message}`, \"\");\n  }, { once: true });\n\n  window.addEventListener(\"unhandledrejection\", function (event) {\n    const reason = event && event.reason;\n    const detail = typeof reason === \"string\"\n      ? reason\n      : reason && reason.message\n        ? reason.message\n        : \"Unhandled promise rejection during QA smoke.\";\n    stamp(\"fail\", `QA smoke rejection: ${detail}`, \"\");\n  }, { once: true });\n\n  if (document.readyState === \"loading\") {\n    document.addEventListener(\"DOMContentLoaded\", function () {\n      window.setTimeout(runSmoke, 60);\n    }, { once: true });\n  } else {\n    window.setTimeout(runSmoke, 60);\n  }\n})();\n</script>\n</body>\n</html>",
+    "generation_mode": "direct_html"
+  }
+}
